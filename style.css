@@ -163,26 +163,6 @@ section {
     transition-delay: .3s;
 }
 
-.header_txt .eventbrite {
-    background: transparent;
-    border: 1px solid var(--txt-color);
-    display: flex;
-    align-items: center;
-    max-width: 200px;
-    border-radius: 30px;
-    padding: 12px;
-    margin-top: 60px;
-}
-
-.header_txt .eventbrite img {
-    max-width: 40px;
-}
-
-.header_txt .eventbrite p {
-    font-size: 12px;
-    margin-left: 20px;
-}
-
 .absoluteHero {
     max-width: 200px;
     display: flex;

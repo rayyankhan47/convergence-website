@@ -31,14 +31,13 @@
     <section id="home" class="header">
         <div class="header_txt">
             <h1 id="heroHead">
-                Everything you need to start
-                and run your business
+                <br>
+                <span id="typeWrapper">
+                    <span class="typewrite" data-loop="yes" data-speed="100" data-delay="1400"
+                        data-words='["Connect.", "Collaborate.", "Grow."]'>
+                    </span>
+                </span>
             </h1>
-            <div class="eventbrite">
-                <img src="https://crystalpng.com/wp-content/uploads/2025/03/eventbrite-logo-png.png"
-                    alt="Eventbrite Logo">
-                <p>Follow our events on Eventbrite</p>
-            </div>
         </div>
         <div class="header_txt absoluteHero">
             <div>
@@ -68,6 +67,40 @@
             </span>
         </a>
     </section>
+
+    <!-- Typewriting script -->
+
+    <script src="typewriting.js"></script>
+
+    <script>
+        const wrapper = document.getElementById("typeWrapper");
+
+        function startCycle() {
+            wrapper.innerHTML = `
+        <span class="typewrite"
+                data-loop="no"
+                data-speed="100"
+                data-delay="1200"
+                data-lastdelay="5000"
+                data-words='[
+                "Connect.",
+                "Collaborate.",
+                "Grow.",
+                "Premium Business Networking for Entrepreneurs, Leaders, and Professionals."
+                ]'></span>
+        `;
+
+            const element = wrapper.querySelector('.typewrite');
+            new typeWriting(element, () => {
+                // Restart entire cycle
+                setTimeout(startCycle, 300);
+            });
+        }
+
+        window.addEventListener("DOMContentLoaded", startCycle);
+    </script>
+
+
 </body>
 
 </html>
