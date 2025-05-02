@@ -194,3 +194,36 @@ section {
     padding: 12px;
     position: relative;
 }
+
+.neonContainer {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.neon_div {
+    display: flex;
+    flex-direction: column;
+    max-width: 230px;
+    text-align: center;
+    padding: 26px;
+    border-radius: 70px;
+    margin-bottom: 35px;
+}
+
+.neon_div:nth-child(1) {
+    background: linear-gradient(0deg, rgba(201, 131, 68, 1) 0%, rgba(127, 35, 111, 1));
+}
+
+.neon_div:nth-child(2) {
+    background: linear-gradient(0deg, rgba(201, 131, 68, 1) 0%, rgba(127, 35, 111, 1));
+}
+
+.neon_div:nth-child(3) {
+    background: linear-gradient(0deg, rgba(201, 131, 68, 1) 0%, rgba(127, 35, 111, 1));
+}
+
+.neon_div:nth-child(4) {
+    background: linear-gradient(0deg, rgba(201, 131, 68, 1) 0%, rgba(127, 35, 111, 1));
+}
