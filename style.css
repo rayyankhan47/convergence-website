@@ -174,9 +174,57 @@ section {
     transition-delay: .3s;
 }
 
+#home {
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url("https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F878837769%2F1837101154873%2F1%2Foriginal.20241019-191728?h=740&w=1200&auto=format%2Ccompress&q=75&sharp=10&s=4df6314d592cc82ef3fd70c35df6a160");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* adjust darkness */
+    z-index: 0;
+}
+
+/* Bottom fade gradient */
+#home::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    /* height of fade */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--main-bg));
+    z-index: 1;
+}
+
+#home>* {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Scroller */
+
 #ScrollMeDown {
     position: absolute;
-    bottom: 25px;
+    bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -193,37 +241,4 @@ section {
     border-radius: 50%;
     padding: 12px;
     position: relative;
-}
-
-.neonContainer {
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.neon_div {
-    display: flex;
-    flex-direction: column;
-    max-width: 230px;
-    text-align: center;
-    padding: 26px;
-    border-radius: 70px;
-    margin-bottom: 35px;
-}
-
-.neon_div:nth-child(1) {
-    background: linear-gradient(0deg, rgba(201, 131, 68, 1) 0%, rgba(127, 35, 111, 1));
-}
-
-.neon_div:nth-child(2) {
-    background: linear-gradient(0deg, rgba(201, 131, 68, 1) 0%, rgba(127, 35, 111, 1));
-}
-
-.neon_div:nth-child(3) {
-    background: linear-gradient(0deg, rgba(201, 131, 68, 1) 0%, rgba(127, 35, 111, 1));
-}
-
-.neon_div:nth-child(4) {
-    background: linear-gradient(0deg, rgba(201, 131, 68, 1) 0%, rgba(127, 35, 111, 1));
 }
