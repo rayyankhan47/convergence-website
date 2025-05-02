@@ -163,7 +163,7 @@ section {
     transition-delay: .3s;
 }
 
-.header_txt {
+.header_txt .eventbrite {
     background: transparent;
     border: 1px solid var(--txt-color);
     display: flex;
@@ -172,4 +172,35 @@ section {
     border-radius: 30px;
     padding: 12px;
     margin-top: 60px;
+}
+
+.header_txt .eventbrite img {
+    max-width: 40px;
+}
+
+.header_txt .eventbrite p {
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.absoluteHero {
+    max-width: 200px;
+    display: flex;
+    position: relative;
+    height: 90vh;
+    padding: 20px 0;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.absoluteHero h1 {
+    position: absolute;
+    top: 40%;
+    left: -60%;
+    font-size: 12rem;
+    font-weight: 600;
+    z-index: -10;
+    color: var(--main-bg);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rosybrown;
 }
