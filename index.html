@@ -21,7 +21,7 @@
             <li><a href="#sponsors">Sponsors</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div id="humburger">
+        <div id="hamburger">
             <span></span>
             <span></span>
         </div>
@@ -46,43 +46,27 @@
         </a>
     </section>
 
-    <section id="about">
-        <div class="aboutBox about_txt">
-            <!-- <h1>Meet established entrepreneurs, leaders, creatives, and professionals in Montreal</h1>
-            <h1>Experience an elevated networking atmosphere at top Montreal venues</h1>
-            <h1>Connect with like-minded individuals for future endeavours</h1>
-            <h1>Learn from a diverse gathering of professional fields, such as Real Estate, Tech, Legal, Fintech,
-                Non-Profit, and more</h1> -->
-            <h1>Empowering Your Vision to Achieve Business <span style="color: orangered;">Excellence</span></h1>
-            <p id="about_p">Convergence's mission is to empower startups and entrepreneurs by providing them with the
-                resources, support, and expertise they need to turn their visions into reality.</p>
+    <!-- About Part 1 -->
+
+    <section class="about1 grid section" id="about1">
+        <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F999226353%2F1837101154873%2F1%2Foriginal.20250402-192640?h=740&w=1200&auto=format%2Ccompress&q=75&sharp=10&s=0a4e5bd5bc8b2cbf67219540cb31266a"
+            alt="image" class="about1_bg">
+        <div class="about_gradient"></div>
+
+        <div class="about1_data">
+            <h1 class="about1_subtitle">WHO ARE WE?</h1>
         </div>
-        <div class="aboutBox about_txt">
-            <h3>What we offer to Empower Your Business?</h3>
-            <ul>
-                <li>
-                    <span class="material-symbols-outlined">
-                        north_east
-                    </span> Expert Guidance
-                </li>
-                <li>
-                    <span class="material-symbols-outlined">
-                        north_east
-                    </span> Expert Guidance
-                </li>
-                <li>
-                    <span class="material-symbols-outlined">
-                        north_east
-                    </span> Expert Guidance
-                </li>
-                <li>
-                    <span class="material-symbols-outlined">
-                        north_east
-                    </span> Expert Guidance
-                </li>
-            </ul>
+
+        <div class="about1_swiper">
+            <div>
+                <article class="about1_article">
+                    <img src="Images/convergencelogo.png" alt="" class="about1_img">
+                </article>
+            </div>
         </div>
+
     </section>
+
     <!-- Typewriting script -->
 
     <script src="typewriting.js"></script>
@@ -101,7 +85,7 @@
                 "Connect.",
                 "Collaborate.",
                 "Grow.",
-                "Premium Business Networking for Entrepreneurs, Leaders, and Professionals."
+                "Premium Business Networking."
                 ]'></span>
         `;
 
@@ -114,6 +98,18 @@
 
         window.addEventListener("DOMContentLoaded", startCycle);
     </script>
+
+    <!-- Navbar toggle for mobile -->
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navul = document.getElementById("navul");
+
+        hamburger.addEventListener("click", () => {
+            navul.classList.toggle("show");
+        });
+    </script>
+
 
 
 </body>

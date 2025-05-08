@@ -128,6 +128,58 @@ nav div span:nth-child(1) {
     margin-bottom: 6px;
 }
 
+#hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--txt-color);
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Hide nav items on small screens */
+@media screen and (max-width: 768px) {
+    #navul {
+        display: none;
+        flex-direction: column;
+        background: var(--main-bg);
+        position: absolute;
+        top: 70px;
+        right: 6%;
+        width: 200px;
+        border-radius: 8px;
+        padding: 10px 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #navul.show {
+        display: flex;
+    }
+
+    #hamburger {
+        display: flex;
+    }
+
+    #navul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #navul li a {
+        display: block;
+        width: 100%;
+    }
+
+}
+
+
 /* Home */
 
 section {
@@ -242,5 +294,3 @@ section {
     padding: 12px;
     position: relative;
 }
-
-/* About Section */
