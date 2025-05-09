@@ -419,6 +419,7 @@ section {
     width: fit-content;
 }
 
+
 .img-main {
     width: 100%;
     border-radius: 0;
@@ -604,4 +605,28 @@ section {
     font-size: 1rem;
     color: var(--light-txt);
     line-height: 1.8;
+}
+
+/* Hidden states for fade-in animation of left and right portions */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 1.4s ease-out, transform 1.4s ease-out;
+}
+
+
+.fade-in.up {
+    transform: translateY(60px);
+    /* From bottom */
+}
+
+.fade-in.down {
+    transform: translateY(-60px);
+    /* From top */
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
 }
