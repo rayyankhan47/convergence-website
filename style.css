@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+
+/* imported Roboto, Poppins, Anton, and Teko font families */
+
+:root {
+    /* --main-bg: #222222; */
+    --main-bg: #111111;
+    --txt-color: #fff;
+    --light-txt: #ffffffd0;
+    --secondary_txt: #111;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--txt-color);
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    background: var(--main-bg);
+    color: var(--txt-color);
+    overflow-x: hidden;
+}
+
+nav {
+    padding: 28px 6%;
+    max-width: 1280px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    left: 50%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    transition: .2s;
+}
+
+nav h1 {
+    z-index: 100;
+}
+
+nav.active {
+    padding: 16px 6%;
+    background: var(--main-bg);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-right: 3.5vw;
+    position: relative;
+}
+
+nav ul li a {
+    color: var(--txt-color);
+    text-decoration: none;
+    /* cursor: none; */
+}
+
+nav ul li::before {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 50%;
+    right: 50%;
+    height: 2px;
+    background: var(--txt-color);
+    border-radius: 3px;
+    transition: .2s;
+    transition-delay: .1s;
+
+}
+
+nav ul li:hover::before {
+    left: 0;
+    right: 0;
+}
+
+nav div {
+    display: flex;
+    flex-direction: column;
+}
+
+nav div span {
+    width: 30px;
+    height: 4px;
+    position: relative;
+    background: var(--txt-color);
+    border-radius: 3px;
+}
+
+nav div span:nth-child(1) {
+    margin-bottom: 6px;
+}
+
+#hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--txt-color);
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Hide nav items on small screens */
+@media screen and (max-width: 768px) {
+    #navul {
+        display: none;
+        flex-direction: column;
+        background: var(--main-bg);
+        position: absolute;
+        top: 70px;
+        right: 6%;
+        width: 200px;
+        border-radius: 8px;
+        padding: 10px 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #navul.show {
+        display: flex;
+    }
+
+    #hamburger {
+        display: flex;
+    }
+
+    #navul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #navul li a {
+        display: block;
+        width: 100%;
+    }
+
+}
+
+
+/* Home */
+
+section {
+    max-width: 1280px;
+    padding: 90px 6% 20px 6%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 0;
+}
+
+
+
+.header_txt {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header .header_txt {
+    width: 80%;
+}
+
+.header_txt h1 {
+    font-size: 3.3rem;
+    max-width: 600px;
+    font-weight: 500;
+    line-height: 66px;
+    letter-spacing: -2px;
+}
+
+.header_txt #heroHead {
+    transition-delay: .3s;
+}
+
+#home {
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url("https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F878837769%2F1837101154873%2F1%2Foriginal.20241019-191728?h=740&w=1200&auto=format%2Ccompress&q=75&sharp=10&s=4df6314d592cc82ef3fd70c35df6a160");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* adjust darkness */
+    z-index: 0;
+}
+
+/* Bottom fade gradient */
+#home::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    /* height of fade */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--main-bg));
+    z-index: 1;
+}
+
+#home>* {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Scroller */
+
+#ScrollHomeDown {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* cursor: none; */
+}
+
+#ScrollHomeDown span {
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 12px;
+    position: relative;
+}
