@@ -382,16 +382,36 @@ section {
     background: linear-gradient(135deg, var(--convergence-grad-1), var(--convergence-grad-2));
     color: var(--main-bg);
     padding: 12px 24px;
-    border-radius: 6px;
+    border-radius: 0px;
     text-decoration: none;
     font-weight: 600;
 }
 
+.btn-primary:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    background: linear-gradient(135deg, var(--convergence-grad-2), var(--convergence-grad-1))
+}
+
 .btn-secondary {
-    color: orange;
+    color: var(--convergence-grad-1);
     text-decoration: none;
     font-weight: 600;
     align-self: center;
+}
+
+.btn-secondary:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+    transform: translateY(-2px);
+}
+
+.btn-secondary:active {
+    color: var(--convergence-grad-2);
 }
 
 .about-stats {
@@ -474,6 +494,10 @@ section {
     z-index: 0;
     transform: rotate(2deg);
     border-radius: 0;
+}
+
+.bg-shape:hover {
+    background: linear-gradient(135deg, var(--convergence-grad-2), var(--convergence-grad-1));
 }
 
 .about-images img {
@@ -609,4 +633,41 @@ section {
 .fade-in.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Why convergence styling */
+
+.about-why h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--txt-color);
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: inline-block;
+}
+
+.about-why h3::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(135deg, var(--convergence-grad-1), var(--convergence-grad-2));
+    border-radius: 2px;
+}
+
+.why-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 40px 30px;
+    border-radius: 0px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.why-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 12px var(--convergence-grad-2);
 }
