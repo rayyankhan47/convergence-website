@@ -39,12 +39,83 @@
                 </span>
             </h1>
         </div>
-        <a href="#about1" id="ScrollHomeDown">
+        <a href="#about" id="ScrollHomeDown">
             <span class="material-symbols-outlined">
                 south
             </span>
         </a>
     </section>
+
+    <section id="about" class="about-split section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Connect <span class="gradient-text">Leaders</span>,<br>Create <span
+                        class="gradient-text">Future</span>.</h2>
+                <p>
+                    Convergence hosts Montreal’s top networking events for leaders, entrepreneurs, and innovators. We
+                    create spaces to share insights, foster collaboration, and drive personal and professional growth.
+                </p>
+                <div class="about-buttons">
+                    <a href="#events" class="btn-primary">Our Events</a>
+                    <a href="#contact" class="btn-secondary gradient-text">Contact Us</a>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3 class="gradient-text">10+</h3>
+                        <p>Events Hosted</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="gradient-text">200+</h3>
+                        <p>Leaders Connected</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-images">
+                <div class="bg-shape"></div>
+                <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F878837459%2F1837101154873%2F1%2Foriginal.20241019-191656?h=740&w=1200&auto=format%2Ccompress&q=75&sharp=10&s=6f5c0e9c1b6bd97ccbb23d9ac250c1de"
+                    class="img-main" alt="Networking photo">
+            </div>
+        </div>
+        <!-- Mission Statement Bar -->
+        <div class="about-mission-bar">
+            <p>
+                To connect high-level professionals across industries in Montreal to elevate impact, share insight, and
+                drive innovation — together.
+            </p>
+        </div>
+
+        <!-- Core Values -->
+        <div class="about-values">
+            <div class="value-card">
+                <h4 class="gradient-text">Collaboration</h4>
+                <p>We foster authentic partnerships that drive lasting results.</p>
+            </div>
+            <div class="value-card">
+                <h4 class="gradient-text">Ambition</h4>
+                <p>Our members are driven to lead, disrupt, and grow.</p>
+            </div>
+            <div class="value-card">
+                <h4 class="gradient-text">Cross-Industry Unity</h4>
+                <p>Bridging diverse fields to inspire fresh ideas and new ventures.</p>
+            </div>
+            <div class="value-card">
+                <h4 class="gradient-text">Meaningful Change</h4>
+                <p>We believe networking should lead to real-world impact.</p>
+            </div>
+        </div>
+
+        <!-- Why Convergence -->
+        <div class="about-why">
+            <h3>Why Convergence?</h3>
+            <p>
+                Unlike casual mixers, Convergence curates every event to ensure quality connections, shared values, and
+                forward-thinking discourse among Montreal’s most driven minds.
+            </p>
+        </div>
+
+    </section>
+
+
 
 
     <!-- Typewriting script -->
@@ -88,6 +159,19 @@
         hamburger.addEventListener("click", () => {
             navul.classList.toggle("show");
         });
+    </script>
+
+    <!-- Change Navbar style past hero section -->
+    <script>
+        window.addEventListener("scroll", () => {
+            const navbar = document.getElementById("navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("active");
+            } else {
+                navbar.classList.remove("active");
+            }
+        });
+
     </script>
 
 
