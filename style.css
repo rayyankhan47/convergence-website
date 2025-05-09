@@ -484,15 +484,6 @@ section {
 }
 
 @media screen and (max-width: 768px) {
-    .image-shape-container {
-        position: relative;
-        width: 100%;
-        max-width: 90%;
-        margin: 0 auto;
-        height: 240px;
-        /* Sets the total height of the container */
-    }
-
     .bg-shape {
         position: absolute;
         top: 0;
@@ -503,17 +494,6 @@ section {
         background: linear-gradient(135deg, var(--convergence-grad-1), var(--convergence-grad-2));
         z-index: 0;
         border-radius: 0;
-    }
-
-    .image-shape-container img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 85%;
-        border-radius: 0;
-        z-index: 1;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     }
 }
 
