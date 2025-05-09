@@ -589,28 +589,6 @@ section {
 }
 
 
-/* Why Convergence */
-.about-why {
-    margin-top: 60px;
-    max-width: 720px;
-    margin-inline: auto;
-    text-align: center;
-    padding: 0 16px;
-}
-
-.about-why h3 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: var(--txt-color);
-    font-family: 'Poppins', sans-serif;
-}
-
-.about-why p {
-    font-size: 1rem;
-    color: var(--light-txt);
-    line-height: 1.8;
-}
-
 /* Hidden states for fade-in animation of left and right portions */
 
 .fade-in {
@@ -635,39 +613,4 @@ section {
     transform: translateY(0);
 }
 
-/* Why convergence styling */
-
-.about-why h3 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: var(--txt-color);
-    font-family: 'Poppins', sans-serif;
-    position: relative;
-    display: inline-block;
-}
-
-.about-why h3::after {
-    content: '';
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    height: 4px;
-    width: 100%;
-    background: linear-gradient(135deg, var(--convergence-grad-1), var(--convergence-grad-2));
-    border-radius: 2px;
-}
-
-.why-box {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 40px 30px;
-    border-radius: 0px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.why-box:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0 12px var(--convergence-grad-2);
-}
+/* Events */
